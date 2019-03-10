@@ -1,0 +1,69 @@
+#contato{
+	width: 100%;
+	font-family: "Roboto";
+}
+
+.contato__container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	color: #9B51E0;
+	padding: 8% 4%;
+	background: $color4;
+}
+
+input[type=text]{
+	width: 60vw;
+	height: 6vh;
+	border: 4px solid $color1;
+	margin: 4% 0;
+	background: $color4;
+}
+
+.contato__container__mensagem{
+  	width: 60vw;
+	height: 20vh;
+	border: 4px solid $color1;
+	margin: 4% 0;
+	background: $color4;
+}
+
+::placeholder{
+	font-family: "Roboto";
+	color: $color1;
+	padding-left: 2%;
+}
+
+.contato__btn__enviar{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background: #9B51E0;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*
+	Medium devices
+*/
+
+@media screen and (min-width: 768px){
+
+	input[type=text]{
+		width: 40vw;
+		height: 6vh;
+	}
+
+	.contato__container__mensagem{
+  		width: 40vw;
+		height: 15vh;
+	}	
+
+	.contato__container{
+		padding: 4% 2%;
+	}
+}
+

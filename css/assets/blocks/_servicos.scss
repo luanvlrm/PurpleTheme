@@ -1,0 +1,39 @@
+#servicos{
+	width: 100%;
+	font-family: "Roboto";
+	background: $color4;
+	color: $color1;
+}
+
+.servicos__container--fluid{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.servicos__container__itens{
+	padding: 10% 0;
+}
+
+.servicos__container__itens p{
+	padding: 20% 0;
+	font-size: 1.2em;
+}
+
+/*
+	Medium devices
+*/
+
+@media screen and (min-width: 768px){
+	.servicos__container--fluid{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.servicos__container__itens p{
+		font-size: 1.4em;
+	}
+}

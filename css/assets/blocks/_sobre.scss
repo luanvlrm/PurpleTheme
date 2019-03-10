@@ -1,0 +1,55 @@
+/* Small devices (240px) */
+#sobre{
+	width: 100%;
+	font-family: "Roboto";
+	background: $color4;
+
+	.container--fluid{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		background: $color5;
+	}
+}
+
+.sobre__container__itens h1{
+	color: #BB6BD9;
+	padding: 6% 0 4% 0;
+	text-align: center;
+}
+
+.sobre__container__itens p{
+	padding: 4%;
+	text-align: center;
+}
+
+/*
+	Medium devices
+*/
+
+@media screen and (min-width: 768px){
+	
+	#sobre .container--fluid{
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0 4% 0 4%;
+	}
+
+	.sobre__container__itens{
+		margin: 4%;
+	}
+
+	.sobre__container__itens p{
+		max-width: 800px;
+		text-align: justify;
+	}
+}
+
+@media screen and (min-width: 900px){
+
+	.sobre__container__itens p{
+		padding: 2%;
+	}
+}
